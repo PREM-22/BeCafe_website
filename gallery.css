@@ -353,6 +353,7 @@ body {
   margin: 130px auto;
   text-align: center;
   padding: 0 20px;
+  color: #FFFFFF;
 }
 .content1 .text{
   font-size: 2.5rem;
@@ -371,19 +372,23 @@ footer{
 }
 .main-content{
   display: flex;
+  color: #FFFFFF;
 }
 .main-content .box{
   flex-basis: 50%;
   padding: 10px 20px;
+  color: #FFFFFF;
 }
 .box h2{
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 .box .content{
   margin: 20px 0 0 0;
   position: relative;
+  color: #FFFFFF;
 }
 .box .content:before{
 
@@ -400,16 +405,20 @@ footer{
   width: 15%;
   background: #f16d20;
   top: -10px;
+  color: #FFFFFF;
 }
 .left .content p{
   text-align: justify;
+  color: #FFFFFF;
 }
 .left .content .social{
   margin: 20px 0 0 0;
+  color: #FFFFFF;
 }
 .left .content .social a{
   color: #d9d9d9;
   padding: 0 2px;
+
 }
 .left .content .social a span{
   height: 40px;
@@ -420,9 +429,11 @@ footer{
   font-size: 18px;
   border-radius: 5px;
   transition: 0.3s;
+  color: #FFFFFF;
 }
 .left .content .social a span:hover{
   background: #f16d20;
+  
 }
 .center .content .fas{
   font-size: 1.4375rem;
@@ -434,6 +445,7 @@ footer{
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
+  color: #FFFFFF;
 }
 .center .content .fas:hover{
   background: #f16d20;
