@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Rainy Day</title>
+ <link rel="stylesheet" href="droplet.css">
+</head>
+
+<body>
+ <section>
+  <img id="background" alt="background" src="" />
+ </section>
+ <script src="rainyday.js"></script>
+ <script>
+  function rain() {
+   const image = document.getElementById('background')
+   image.onload = function () {
+    var rainyDay = new RainyDay({
+     image: this,
+     blur: 10,
+     fps: 40;
+    })
+    rainyDay.rain([
+     [5, 2, 2]
+    ], 0)
+   }
+   image.src = 'images/droplets.jpeg'
+  }
+
+  rain();
+ </script>
+</body>
+
+</html>
