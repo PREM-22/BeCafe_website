@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda", cursive;
+  box-sizing: border-box;
+}
+
+
+
+
+
+#nav-checkbox,
+.nav-toggle {
+  display: none;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+  padding: px 0;
+  transition: background-color 0.5s ease;
+}
+
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+.nav-menu li a:hover {
+  color: #ff00a2;
+}
+
+.active {
+  background: #cc0000;
+}
+
+.active a:hover {
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    top: 25px;
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    top: 25px;
+    right: 0;
+  }
+
+  .nav-toggle img {
+    width: 25px;
+  }
+
+  .align-text,
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  #nav-checkbox:checked~.nav-menu {
+    background: #cc0000;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+  }
+
+  .nav-menu li {
+    display: none;
+    margin: 10px 0;
+  }
+
+  #nav-checkbox:checked~ul.nav-menu li {
+    display: block;
+  }
+
+  #nav-checkbox:checked~label.nav-toggle .align-text {
+    display: none;
+  }
+
+  #nav-checkbox:checked~label.nav-toggle .align-text {
+    display: block;
+  }
+}
+
+body
+{
+ background-color: rgb(247, 183, 217);
+ min-height: 150vh;
+}
+
+section{
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ background: url(images/gallery.jpeg);
+ background-size: cover;
+ background-attachment: fixed;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ clip-path: circle(170vh at 50% -80vh);
+ }
+
+
+
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(134, 9, 9, 0.4); /* Black w/opacity/see-through */
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+
+body{
+  font-family: 'Merienda', cursive;
+}
+
+/*
+.container{
+  box-sizing: border-box;
+  width= 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar ul li a{
+  display: block;
+  color: #fff;
+  padding: 16px;
+}
+
+.navbar ul li a:hover{
+  background-color: #ffffff;
+  color:rgb(236, 38, 226)
+}
+
+.navbar a.active {
+  background-color: #ee28a2;
+  color: white;
+}
+
+.menu-icon{
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+*/
+
+/*image grid */
+/*
+body {
+  margin: 0;
+  font-family: 'Merienda', cursive;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */               /*
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */            /*
+  flex-wrap: wrap;                    /*
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */        /*
+.column {                                /*
+  object-fit: cover;
+  height: 50%;
+  -ms-flex: 25%; /* IE10 */                     /*  
+  flex: 25%;                                 /*
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */                   /* 
+@media screen and (max-width: 800px) {                 /*
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */           /*
+@media screen and (max-width: 800px) {                      /*
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+*/
+
+.img-gallery {
+  width: 80%;
+  margin: 100px auto 50px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 30px;
+  overflow: hidden;
+  
+}
+
+.img-gallery img{
+  width: 100%;
+    overflow: hidden;
+  cursor: pointer;
+  	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+    margin: 0 0 0 25px;
+}
+
+.img-gallery img:hover{
+  -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+      -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+  box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.content1{
+  box-sizing: border-box;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f16d20;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  color: #d9d9d9;
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f16d20;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f16d20;
+}
+.center .content .text{
+  font-size:  1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f16d20;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  padding: 20px 0;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #646262;
+}
+.bottom center a{
+  color: #f120bd;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+

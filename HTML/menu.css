@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merienda', cursive;
+  background: rgb(183, 216, 151);
+}
+
+
+
+
+
+
+
+#nav-checkbox,
+.nav-toggle {
+  display: none;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+  padding: 10px 0;
+  transition: background-color 0.5s ease;
+}
+
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+.nav-menu li a:hover {
+  color: #003810;
+}
+
+.active {
+  background: #cc0000;
+}
+
+.active a:hover {
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    top: 25px;
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    top: 25px;
+    right: 0;
+  }
+
+  .nav-toggle img {
+    width: 25px;
+  }
+
+  .align-text,
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  #nav-checkbox:checked~.nav-menu {
+    background: #cc0000;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+  }
+
+  .nav-menu li {
+    display: none;
+    margin: 10px 0;
+  }
+
+  #nav-checkbox:checked~ul.nav-menu li {
+    display: block;
+  }
+
+  #nav-checkbox:checked~label.nav-toggle .align-text {
+    display: none;
+  }
+
+  #nav-checkbox:checked~label.nav-toggle .align-text {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.video-background
+{
+ position:absolute;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ width:auto;
+ height:auto;
+ z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9)
+  
+     .video-background
+     {
+       width: 100%;
+       height:auto;
+     }
+
+@media(max-aspect-ratio:16/9)
+  
+     .video-background
+     {
+       width: 100%;
+       height:auto;
+     }
+*/
+
+
+
+
+/*
+
+
+.container{
+  box-sizing: border-box;
+  width= 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar ul li a{
+  display: block;
+  color: #fff;
+  padding: 16px;
+}
+
+.navbar ul li a:hover{
+  background-color: #ffffff;
+  color:rgb(33, 85, 3)
+}
+
+.navbar a.active {
+  background-color: #092e02;
+  color: white;
+}
+
+.menu-icon{
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+*/
+
+
+
+
+.items{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.item img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 8px;
+}
+
+.item img:hover{
+  transform: scale(1.04);
+}
+.item h4{
+  padding: 5px;
+  text-align: center;
+}
+.item button{
+ padding: 5px 30px;
+ border: none;
+ outline: none;
+ background-color: rgb(46, 139, 87);
+ color: white;
+ cursor: pointer;
+ border-radius: 4px;
+ font-size: 20px;
+ display: block;
+ margin: 0 auto;
+ transition: 0.2s all;
+ font-family: 'Merienda', cursive;
+}
+
+.item button:hover{
+ transform: scale(1.08);
+}
+@media screen and max(max-width:1000px){
+ .items{
+  grid-template-columns: repeat(2,-1fr);
+ }
+}
+@media screen and (max-width: 768px){
+ .items{
+  grid-template-columns: repeat(1, 1fr);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.backgroundcurve {
+ width: 100vw;
+ height: 95vh;
+ margin: 0;
+ overflow: hidden;
+}
+.curved{
+ background:#092e02;
+ color: #fff;
+ text-align: center;
+}
+.curved h1 {
+ font-size: 4rem;
+ font-family: 'Merienda', cursive;
+ margin-top: 0;
+ }
+ .curved p{
+  font-size: 1rem;
+  font-family: 'Merienda', cursive;
+  margin: 0 5rem 0 5rem;
+ }
+ .curved svg{
+  display: block;
+ }
+ .curved.upper{
+  background:#b7d897;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/*copyright*/
+
+.footer-bottom{
+ background: #000;
+ width: 100vw;
+ padding: 20px 0;
+ text-align: center;
+}
+
+.footer-bottom p{
+ font-size: 14px;
+ word-spacing: 2px;
+ text-transform: capitalize;
+}
+
+.footer-bottom span{
+ text-transform: uppercase;
+ color: rgb(105, 95, 95);
+ font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
